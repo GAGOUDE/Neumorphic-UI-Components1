@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F6FB;
+    font-family: 'Muli', sans-serif;
+}
+
+.content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+/* COMPONENTS */
+.components {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 170px;
+    background-color: #F1F3FA;
+    border-radius: 8px;
+    box-shadow: 1px 35px 30px rgba(0, 0, 0, 0.1), -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.component {
+    cursor: pointer;
+    margin: auto 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.component:hover {
+    box-shadow: 1px 35px 30px rgba(0, 0, 0, 0.1), -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.fa {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.fa-credit-card {
+    background-color: lightcoral;
+}
+
+.fa-gift {
+    background-color: #FBAA70
+}
+
+.fa-shopping-bag {
+    background: #7F7AFD;
+}
+
+.component p {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.component p:hover {
+    font-weight: bold;
+}
+
+/* DESCRIPTION */
+
+.description {
+    width: 600px;
+    height: 90px;
+    margin: 50px auto;
+    background: #E5E8F2;
+    border-radius: 8px;
+    box-shadow: inset -10px -15px 7px rgba(255, 255, 255, 0.4), inset 3px 0 5px -1px rgba(0,0,0,.1);
+}
+
+.description p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BUTTONS */
+
+.buttons{
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 80px;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.btn-1 {
+    background: #7A90FD;
+    box-shadow: 1px 35px 30px rgba(0, 0, 0, 0.1), -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.btn-1:hover {
+    background:  #F1F3FA;
+    color:#7A90FD;
+}
+
+
+.btn-2 {
+    background: #F1F3FA;
+    color:#7A90FD; 
+    box-shadow: 21px 20px 60px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.btn-2:hover{
+    background: #7A90FD;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    margin: 30px auto;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+}
+
+.attribution a {
+    color: #7A90FD;
+}
+
+/* RESPONSIVE */
+@media (max-width: 630px){
+    .components{
+        width: 350px;
+        height: auto;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+
+    .description{
+        width: 350px;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn-1{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 325px){
+    .components{
+        width: 270px;
+        margin-top: 280px;
+    }
+
+    .description{
+        width: 270px;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+
+
+
